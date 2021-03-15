@@ -1,37 +1,85 @@
-<!doctype html>
-<html>
-<head>
-    <title>Tax Calculator Assignment</title>
-</head>
-<body>
-    <h3>Tax Calculator Assignment</h3>
-    <div>Build an application / tool in React or Python with the following criteria:</div>
-    <ul>
-        <li>Fetches the tax rates from this API server</li>
-        <li>Takes a yearly salary as input</li>
-        <li>Calculates and displays the total taxes owed for the salary</li>
-        <li>Displays the amount of taxes owed per band</li>
-        <li>Displays the effective rate</li>
-    </ul>
-    <p>
-        There are different levels to this assignment, level 1 being the easiest, level 2
-        having some gotchas, etc. <br/>If you complete a level with ease, feel free to jump to
-        the next one. <strong>Please timebox your solution to 1 day max</strong>.
-    </p>
-    <h4>Level 1</h4>
-    <ul>
-        <li>
-            Fetch the tax rates from this server at:
-            <a href="http://localhost:5000/tax-calculator/brackets/"> localhost:5000/tax-calculator/brackets/ </a>
-        </li>
-    </ul>
-    <h4>Level 2</h4>
-    <ul>
-        <li>
-            Fetch the tax rates by year:
-            <a href="http://localhost:5000/tax-calculator/brackets/2020"> localhost:5000/tax-calculator/brackets/<2019|2020|...> </a>
-        </li>
-    </ul>
-    <div><em>Warning: this endpoint has gotchas</em></div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Points - A1: Tax Calculator</title>
+        <link rel="icon" href="../static/points-logo-vertical.png">
+
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/48fcb9931e.js" crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Instructions for Points' tax calculator assignment to test dev applicants.">
+    </head>
+    <body>
+
+        <nav id="sidebar">
+            <img src="../static/points-logo-transparent.png" alt="PointsLogo">
+            <a href="/">
+                <i class="fa fa-fw fa-home large-icon"></i>
+                Home Page
+            </a>
+            <a class="active" href="/tax-calculator/">
+                <i class="fas fa-calculator small-icon"></i>
+                A1: Tax Calculator
+            </a>
+            <a href="/autonomous-car/">
+                <i class="fas fa-car medium-icon"></i>
+                A2: Autonomous Car
+            </a>
+        </nav>
+        <main>
+            <header>
+                <div id="title-section" class="panel centered">
+                    <a class="no-decoration-link" href="/">
+                        <h1 class="points-grey-text">
+                            <i class="fas fa-code"></i>
+                            Points Interview Server
+                        </h1>
+                    </a>
+                </div>
+            </header>
+            <article>
+                <br>
+                <h2 class="centered">Tax Calculator Assignment</h2>
+                <div class="panel border">
+                    <div class="panel-item description" style="width:65%">
+                        <h3>Assignment Description:</h3>
+                        <p>
+                            Build an application / tool in React or Python with the following criteria:
+                            <ul class="description">
+                                <li>Fetches the tax rates from this API server</li>
+                                <li>Takes a yearly salary as input</li>
+                                <li>Calculates and displays the total taxes owed for the salary</li>
+                                <li>Displays the amount of taxes owed per band</li>
+                                <li>Displays the effective rate</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <img class="panel-item"
+                         src="../static/calculator-icon.png"
+                         alt="TaxCalculator-Image"
+                         width="25%"
+                    >
+                </div>
+
+                <h3>Level 1: </h3>
+                <ul>
+                    <li>
+                        Fetch the tax rates from this server at:
+                        <a href="http://localhost:5000/tax-calculator/brackets/"> localhost:5000/tax-calculator/brackets/ </a>
+                    </li>
+                </ul>
+                <h3>Level 2: </h3>
+                <ul>
+                    <li>
+                        Fetch the tax rates by year:
+                        <a href="http://localhost:5000/tax-calculator/brackets/2020"> localhost:5000/tax-calculator/brackets/<2019|2020|...> </a>
+                    </li>
+                </ul>
+                <div><em>Warning: this endpoint has gotchas</em></div>
+            </article>
+        </main>
+    </body>
 </html>

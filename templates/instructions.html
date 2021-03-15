@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>Points - Interview Test Server</title>
-        <link rel="icon" href="../static/images/points-tiny-logo.png">
+        <link rel="icon" href="../static/points-logo-vertical.png">
 
         <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
         <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -15,13 +15,13 @@
     <body>
 
         <nav id="sidebar">
-            <img src="../static/images/points-logo.jpg" alt="PointsLogo">
+            <img src="../static/points-logo-transparent.png" alt="PointsLogo">
             <a class="active" href="/">
-                <i class="fa fa-fw fa-home"></i>
+                <i class="fa fa-fw fa-home large-icon"></i>
                 Home Page
             </a>
             <a href="/tax-calculator/">
-                <i class="fas fa-calculator"></i>
+                <i class="fas fa-calculator small-icon"></i>
                 A1: Tax Calculator
             </a>
             <a href="/autonomous-car/">
@@ -32,8 +32,8 @@
 
         <main id="main-section">
             <header>
-                <div id="title-section" class="center-panel">
-                    <a class="title-link" href="./instructions.html">
+                <div id="title-section" class="panel centered">
+                    <a class="no-decoration-link" href="/">
                         <h1 class="points-grey-text">
                             <i class="fas fa-code"></i>
                             Points Interview Server
@@ -44,13 +44,13 @@
 
             <article>
                 <div id="description-section">
-                    <h2>Description:</h2>
-                    <p>
+                    <h3>Description:</h3>
+                    <p class="description">
                         Welcome! Please build one of the following applications in either:
                         <strong><i class="fab fa-react"></i> React.js</strong> or
                         <strong><i class="fab fa-python"></i> Python</strong>.
 
-                        <br>
+                        <br><br>
 
                         There are two levels for each assignment, level 1 being the easiest, and level 2 containing some
                         'gotchas' and other unexpected behaviour. If you complete the first level with ease, feel free
@@ -58,27 +58,30 @@
                     </p>
                 </div>
                 <div id="assignment-section">
-                    <h2>Assignment Options:</h2>
+                    <h3>Assignment Options:</h3>
 
-                    <div id="floating-cards">
+                    <div id="floating-cards" class="panel">
 
-                        <div class="card">
-                            <img src="../static/images/points-logo.jpg" alt="SmallImage" style="width:100%">
-                            <div class="container">
-                                <h4><b>Tax Calculator</b></h4>
-                                <p>Small-Description ... </p>
-                            </div>
+                        <div id="Tax-Calculator-Card" class="card centered">
+                            <a href="/tax-calculator/" class="no-decoration-link">
+                                <img class="card-image" src="../static/calculator-icon.png" alt="TaxCalculator-Image">
+                                <div class="container">
+                                    <h4><b>Tax Calculator</b></h4>
+                                    <p class="card-description">Calculate the total amount owed in taxes based on an income.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="Autonomous-Car-Card" class="card centered">
+                            <a href="/autonomous-car/" class="no-decoration-link">
+                                <img class="card-image" src="../static/car-icon-1.png" alt="AutonomousCar-Image">
+                                <div class="container">
+                                    <h4><b>Autonomous Car</b></h4>
+                                    <p class="card-description">Navigate a car based on a provided track and instructions.</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
-
-                    <ol>
-                        <li>
-                            <a href="/tax-calculator/">Tax Calculator</a>
-                        </li>
-                        <li>
-                            <a href="/autonomous-car/">Automated Car</a>
-                        </li>
-                    </ol>
                 </div>
             </article>
         </main>

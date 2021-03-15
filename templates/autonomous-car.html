@@ -1,35 +1,66 @@
-<!doctype html>
-<html>
-<head>
-    <title>Autonomous Car Assignment</title>
-</head>
-<body>
-    <h3>Autonomous Car Assignment</h3>
-    <div>Build an application / tool in React or Python with the following criteria:</div>
-    <ul>
-        <li>Fetches a car route from this API server</li>
-        <li>Determines if the route was a success or a failure</li>
-        <li>If the route results in a failure, determine the cause as well as the step and position where the failure occurred</li>
-    </ul>
-    <p>
-        There are different levels to this assignment, level 1 being the easiest, level 2
-        having some gotchas, etc. <br/>If you complete a level with ease, feel free to jump to
-        the next one. <strong>Please timebox your solution to 1 day max</strong>.
-    </p>
-    <h4>Level 1</h4>
-    <ul>
-        <li>
-            Fetch a static autonomous car route from this server at:
-            <a href="http://localhost:5000/autonomous-car/routes/">localhost:5000/autonomous-car/routes/</a>
-        </li>
-    </ul>
-    <h4>Level 2</h4>
-    <ul>
-        <li>
-            Fetch a random autonomous car route:
-            <a href="http://localhost:5000/autonomous-car/routes/random/">localhost:5000/autonomous-car/routes/random/</a>
-        </li>
-    </ul>
-    <div><em>Warning: this endpoint has gotchas</em></div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Points - A2: Autonomous Car</title>
+        <link rel="icon" href="../static/points-logo-vertical.png">
+
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/48fcb9931e.js" crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Instructions for Points' tax calculator assignment to test dev applicants.">
+    </head>
+    <body>
+
+        <nav id="sidebar">
+            <img src="../static/points-logo-transparent.png" alt="PointsLogo">
+            <a href="/">
+                <i class="fa fa-fw fa-home large-icon"></i>
+                Home Page
+            </a>
+            <a href="/tax-calculator/">
+                <i class="fas fa-calculator small-icon"></i>
+                A1: Tax Calculator
+            </a>
+            <a class="active" href="/autonomous-car/">
+                <i class="fas fa-car medium-icon"></i>
+                A2: Autonomous Car
+            </a>
+        </nav>
+        <main>
+            <header>
+                    <h1>Autonomous Car Assignment</h1>
+            </header>
+            <article>
+                <div>Build an application / tool in React or Python with the following criteria:</div>
+                <ul>
+                    <li>Fetches a car route from this API server</li>
+                    <li>Determines if the route was a success or a failure</li>
+                    <li>If the route results in a failure, determine the cause as well as the step and position where the failure occurred</li>
+                </ul>
+                <p>
+                    There are different levels to this assignment, level 1 being the easiest, level 2
+                    having some gotchas, etc. <br/>If you complete a level with ease, feel free to jump to
+                    the next one. <strong>Please timebox your solution to 1 day max</strong>.
+                </p>
+                <h4>Level 1</h4>
+                <ul>
+                    <li>
+                        Fetch a static autonomous car route from this server at:
+                        <a href="http://localhost:5000/autonomous-car/routes/">localhost:5000/autonomous-car/routes/</a>
+                    </li>
+                </ul>
+                <h4>Level 2</h4>
+                <ul>
+                    <li>
+                        Fetch a random autonomous car route:
+                        <a href="http://localhost:5000/autonomous-car/routes/random/">localhost:5000/autonomous-car/routes/random/</a>
+                    </li>
+                </ul>
+                <div><em>Warning: this endpoint has gotchas</em></div>
+            </article>
+        </main>
+    </body>
 </html>
