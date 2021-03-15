@@ -1,23 +1,86 @@
-<!doctype html>
-<html>
-<head>
-    <title>Interview Test Server</title>
-</head>
-<body>
-    <h3>Interview Test Server</h3>
-    <p>Build one of the following applications in React or Python</p>
-    <p>
-        There are different levels to each assignment, level 1 being the easiest,
-        level 2 having some gotchas, etc. If you complete a level with ease, feel
-        free to jump to the next one. Please timebox your solution to 1 day max.
-    </p>
-    <ol>
-        <li>
-            <a href="/tax-calculator/">Tax Calculator</a>
-        </li>
-        <li>
-            <a href="/autonomous-car/">Automated Car</a>
-        </li>
-    </ol>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Points - Interview Test Server</title>
+        <link rel="icon" href="../static/images/points-tiny-logo.png">
+
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/48fcb9931e.js" crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Instructions for Points' interview server to test dev applicants.">
+    </head>
+    <body>
+
+        <nav id="sidebar">
+            <img src="../static/images/points-logo.jpg" alt="PointsLogo">
+            <a class="active" href="/">
+                <i class="fa fa-fw fa-home"></i>
+                Home Page
+            </a>
+            <a href="/tax-calculator/">
+                <i class="fas fa-calculator"></i>
+                A1: Tax Calculator
+            </a>
+            <a href="/autonomous-car/">
+                <i class="fas fa-car medium-icon"></i>
+                A2: Autonomous Car
+            </a>
+        </nav>
+
+        <main id="main-section">
+            <header>
+                <div id="title-section" class="center-panel">
+                    <a class="title-link" href="./instructions.html">
+                        <h1 class="points-grey-text">
+                            <i class="fas fa-code"></i>
+                            Points Interview Server
+                        </h1>
+                    </a>
+                </div>
+            </header>
+
+            <article>
+                <div id="description-section">
+                    <h2>Description:</h2>
+                    <p>
+                        Welcome! Please build one of the following applications in either:
+                        <strong><i class="fab fa-react"></i> React.js</strong> or
+                        <strong><i class="fab fa-python"></i> Python</strong>.
+
+                        <br>
+
+                        There are two levels for each assignment, level 1 being the easiest, and level 2 containing some
+                        'gotchas' and other unexpected behaviour. If you complete the first level with ease, feel free
+                        to jump to the next level, but please timebox your solution to a maximum of one day.
+                    </p>
+                </div>
+                <div id="assignment-section">
+                    <h2>Assignment Options:</h2>
+
+                    <div id="floating-cards">
+
+                        <div class="card">
+                            <img src="../static/images/points-logo.jpg" alt="SmallImage" style="width:100%">
+                            <div class="container">
+                                <h4><b>Tax Calculator</b></h4>
+                                <p>Small-Description ... </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol>
+                        <li>
+                            <a href="/tax-calculator/">Tax Calculator</a>
+                        </li>
+                        <li>
+                            <a href="/autonomous-car/">Automated Car</a>
+                        </li>
+                    </ol>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>
