@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Points - A1: Tax Calculator</title>
+        <title>Points - Tax Calculator</title>
         <link rel="icon" href="../static/points-logo-vertical.png">
 
         <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
@@ -22,29 +22,24 @@
             </a>
             <a class="active" href="/tax-calculator/">
                 <i class="fas fa-calculator small-icon"></i>
-                A1: Tax Calculator
+                Tax Calculator App
             </a>
             <a href="/autonomous-car/">
                 <i class="fas fa-car medium-icon"></i>
-                A2: Autonomous Car
+                Autonomous Car App
             </a>
         </nav>
         <main>
             <header>
                 <div id="title-section" class="panel centered">
-                    <a class="no-decoration-link" href="/">
-                        <h1 class="points-grey-text">
-                            <i class="fas fa-code"></i>
-                            Points Interview Server
-                        </h1>
-                    </a>
+                    <h1 class="points-grey-text">
+                        Tax Calculator Application
+                    </h1>
                 </div>
             </header>
             <article>
-                <br>
-                <h2 class="centered">Tax Calculator Assignment</h2>
-                <div class="panel border">
-                    <div class="panel-item description" style="width:65%">
+                <div class="panel assignment-banner">
+                    <div class="panel-item" style="width:65%">
                         <h3>Assignment Description:</h3>
                         <p>
                             Build an application / tool in React or Python with the following criteria:
@@ -60,25 +55,35 @@
                     <img class="panel-item"
                          src="../static/calculator-icon.png"
                          alt="TaxCalculator-Image"
-                         width="25%"
+                         width="275px"
                     >
                 </div>
 
-                <h3>Level 1: </h3>
-                <ul>
-                    <li>
-                        Fetch the tax rates from this server at:
-                        <a href="http://localhost:5000/tax-calculator/brackets/"> localhost:5000/tax-calculator/brackets/ </a>
-                    </li>
-                </ul>
-                <h3>Level 2: </h3>
-                <ul>
-                    <li>
-                        Fetch the tax rates by year:
-                        <a href="http://localhost:5000/tax-calculator/brackets/2020"> localhost:5000/tax-calculator/brackets/<2019|2020|...> </a>
-                    </li>
-                </ul>
-                <div><em>Warning: this endpoint has gotchas</em></div>
+                <div>
+                    <br>
+                    <h3 class="description">Level 1 Endpoint: </h3>
+                    <div class="description panel">
+                        <pre class="panel-item">http://localhost:5000/tax-calculator/brackets/</pre>
+                        <button class="panel-item" onclick="location.href = '/tax-calculator/brackets/';">
+                            GO HERE
+                            <i class="fas fa-mouse-pointer medium-icon"></i>
+                        </button>
+                    </div>
+
+                    <h3 class="description">Level 2 Endpoint: </h3>
+                    <div class="description panel">
+                        <pre class="panel-item">http://localhost:5000/tax-calculator/brackets/&lt;2019 | 2020 | ...&gt;</pre>
+                        <button class="panel-item" onclick="location.href = '/tax-calculator/brackets/';">
+                            GO HERE
+                            <i class="fas fa-mouse-pointer medium-icon"></i>
+                        </button>
+                    </div>
+
+                    <div class="alert centered">
+                        <strong><i class="fas fa-exclamation-triangle"></i> WARNING:</strong>
+                        This Endpoint Includes Some Gotchas.
+                    </div>
+                </div>
             </article>
         </main>
     </body>

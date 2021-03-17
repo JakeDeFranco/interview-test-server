@@ -39,21 +39,16 @@ h1 {
     padding-left: 25px;
 }
 
-.border {
-    border-width: 10px;
-    border-color: black;
-}
-
 nav {
-  height: 100%;
-  width: 300px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #636366;
-  overflow-x: hidden;
-  padding-top: 16px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #636366;
+    overflow-x: hidden;
+    padding-top: 16px;
 }
 
 nav img {
@@ -65,15 +60,15 @@ nav img {
 }
 
 nav a {
-  padding: 6px 8px 6px 30px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  display: block;
+    padding: 6px 8px 6px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
 }
 
 nav a:hover {
-  color: #42C8F3;
+    color: #42C8F3;
 }
 
 .active {
@@ -100,14 +95,21 @@ nav a:hover {
     margin-left: 25px;
 }
 
-
-main {
-  margin-left: 300px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-  color: #636366;
+article {
+    width: 100%;
 }
 
+main {
+    margin-left: 300px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    color: #636366;
+    width: 75%
+    margin-right: 0px;
+}
 
+p {
+    margin-bottom: 0px;
+}
 
 header {
     height: 175px;
@@ -143,8 +145,61 @@ header {
 }
 
 .container {
-  padding: 2px 16px;
+    padding: 2px 16px;
 }
+
+.assignment-banner {
+    width: 100%;
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #ED1651;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    width: 80%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+    margin-right: 2%;
+}
+
+button {
+    background-color: #42C8F3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    height: 65px;
+    width: 13%;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.alert {
+    margin-left: 25px;
+    background-color: #ff9800;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    width: 95%;
+}
+
 
 .points-old-color-background { background-color: #6BCFF6;}
 .points-old-color-text { color: #6BCFF6;}
